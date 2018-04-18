@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jit.lorasystem.mapper.DataMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jit.lorasystem.entity.Data">
+        <id column="id" property="id" />
+        <result column="tempture" property="tempture" />
+        <result column="red_value" property="redValue" />
+        <result column="ir_value" property="irValue" />
+        <result column="ax" property="ax" />
+        <result column="ay" property="ay" />
+        <result column="az" property="az" />
+        <result column="wx" property="wx" />
+        <result column="wy" property="wy" />
+        <result column="wz" property="wz" />
+        <result column="time" property="time" />
+    </resultMap>
+
+</mapper>
