@@ -119,12 +119,31 @@ public class Data implements Serializable {
         this.time = time;
     }
 
+    public Data() {
+    }
+
+    public Data(Float tempture, Integer redValue, Integer irValue, Integer ax, Integer ay, Integer az, Integer wx, Integer wy, Integer wz, Integer id, Date time) {
+
+        this.tempture = tempture;
+        this.redValue = redValue;
+        this.irValue = irValue;
+        this.ax = ax;
+        this.ay = ay;
+        this.az = az;
+        this.wx = wx;
+        this.wy = wy;
+        this.wz = wz;
+        this.id = id;
+        this.time = time;
+    }
+
     @Override
     public String toString() {
         return "Data{" +
         ", tempture=" + tempture +
         ", redValue=" + redValue +
         ", irValue=" + irValue +
+
         ", ax=" + ax +
         ", ay=" + ay +
         ", az=" + az +
